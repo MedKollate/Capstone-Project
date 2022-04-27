@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:  hsl(218, 28%, 13%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* NavBar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    font-family: 'Raleway', sans-serif;
+    background-color:  hsl(217, 28%, 15%);
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.navbar .nav-left img {
+    width: 110px;
+    height: 35px;
+}
+
+.navbar .nav-right ul {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.navbar .nav-right ul li {
+    list-style: none;
+}
+
+.navbar .nav-right ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    opacity: .8;
+}
+
+.container {
+    margin: 2.5% 3%;
+}
+
+/* Header */
+
+header {
+  
+    position: relative;
+}
+
+.dark-bg {
+    width: 100%;
+    
+    background-color:  hsl(217, 27%, 15%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    z-index: 10;
+}
+
+.main h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    line-height: 47px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    z-index: 10;
+}
+
+.main p {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    width: 80%;
+    font-size: 17px;
+    line-height: 25px;
+    opacity: .7;
+    margin-bottom: 25px;
+    z-index: 10;
+}
+
+.main button {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 10px 60px;
+    border-radius: 100px;
+    background-color: hsl(176, 68%, 64%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    z-index: 10;
+}
+
+.curve {
+    width: 100%;
+    position: absolute;
+    top: 57%;
+}
+
+/* Section 1 */
+.section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.box {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    margin-bottom: 25px;
+}
+
+.box h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    text-align: center;
+    opacity: .7;
+    line-height: 23px;
+}
+
+.section-2 {
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 80px 0;
+}
+
+.productive-img {
+    width: 50%;
+    margin-right: 25px;
+}
+
+.stay-productive {
+    width: 39%;
+}
+
+.stay-productive h2 {
+    font-size: 40px;
+}
+
+.stay-productive p {
+    font-size: 15px;
+    padding: 10px 0;
+    opacity: 0.7;
+}
+
+.stay-productive a {
+    color: #fff;
+    opacity: .7;
+    line-height: 10px;
+    text-decoration: underline;
+    display: flex;
+    margin: 20px 0;
+}
+
+.stay-productive a img {
+    margin-left: 2px;
+}
+
+/* Section 3 */
+
+.section-3 {
+    position: relative;
+    padding: 0 2%;
+    margin: 14% 0;
+}
+
+.quote {
+    position: absolute;
+    top: -15%;    
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.testimonial {
+    width: 350px;
+    height: 200px;
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px #00000010;
+    z-index: inherit;
+}
+
+.testimonial p {
+    font-family: 'Raleway', sans-serif;
+    opacity: .7;
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+.testimonial .people {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.testimonial .people img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 5%;
+}
+
+.testimonial .people div h5 {
+    opacity: .7;
+    padding: 1px 0;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(216, 53%, 9%);
+    padding: 2.5% 7%;
+    margin-top: 25%;
+}
+
+.section-4 {
+    position: relative;
+    top: -150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-act {
+    width: 800px;
+    height: 250px;
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px 50px 20px 50px;
+    border-radius: 10px;
+    box-shadow:  5px 5px #00000030;
+    z-index: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-act h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 29px;
+    margin-bottom: 25px;
+}
+
+.call-to-act p {
+    text-align: center;
+    line-height: 20px;
+    opacity: .7;
+    margin-bottom: 25px;
+    padding: 0 50px;
+}
+
+.get-started {
+    width: 100%;
+}
+
+.get-started input {
+    width: 65%;
+    height: 300%;
+    border-radius: 100px;
+    padding: 0 30px;
+    border: none;
+    margin-right: 20px;
+}
+
+.get-started button {
+    width: 30%;
+    height: 300%;
+    border-radius: 100px;
+    padding: 0 30px;
+    border: none;
+    background-color: hsl(176, 68%, 64%);
+    color: #fff;
+    font-weight: 600;
+}
+
+.foot-img {
+    width: 90px;
+    height: 25px;
+    margin-bottom: 3%;
+}
+
+
+.footer div {
+    display: flex;
+}
+
+.foot-location {
+    width: 30%;
+    margin-right: 8%;
+}
+ 
+.foot-location div {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.foot-location div img {
+    width: 15px;
+    height: 15px;
+    margin-right: 7%;
+}
+
+.foot-location div p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    opacity: .7;
+    line-height: 22px;
+}
+
+.contact {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3%;
+}
+
+.contact div {
+    display: flex;
+}
+
+.contact div img {
+    width: 15px;
+    height: 15px;
+    margin-right: 7%;
+    margin-bottom: 10%;
+}
+
+.contact div p {
+    opacity: .7;
+    font-size: 13px;
+}
+
+.foot-nav-1 {
+    width: 10%;
+    margin-right: 2%;
+}
+
+.foot-nav-1 ul li {
+    list-style: none;
+    opacity: .7;
+    margin-bottom: 30%;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.foot-nav-2 {
+    width: 10%;
+    margin-right: 3%;
+}
+
+.foot-nav-2 ul li {
+    list-style: none;
+    opacity: .7;
+    margin-bottom: 30%;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.foot-social {
+    width: 10%;
+}
+
+.fa-brands {
+    font-size: 25px;
+    margin-right: 20%;
+}
