@@ -62,13 +62,11 @@ body {
 /* Header */
 
 header {
-  
     position: relative;
 }
 
 .dark-bg {
     width: 100%;
-    
     background-color:  hsl(217, 27%, 15%);
     display: flex;
     justify-content: center;
@@ -81,7 +79,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
+    margin-top: 10%;
     z-index: 10;
 }
 
@@ -162,6 +160,8 @@ header {
     line-height: 23px;
 }
 
+/* Section 2 */
+
 .section-2 {
     display: flex;
     width: 100%;
@@ -173,10 +173,14 @@ header {
 .productive-img {
     width: 50%;
     margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .stay-productive {
     width: 39%;
+    
 }
 
 .stay-productive h2 {
@@ -333,7 +337,7 @@ header {
 }
 
 
-.footer div {
+.foot {
     display: flex;
 }
 
@@ -416,4 +420,197 @@ header {
 .fa-brands {
     font-size: 25px;
     margin-right: 20%;
+}
+
+/* Mobile view */
+
+@media screen and  (max-width:375px) {
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        margin: 7% 7%;
+    }
+
+    .navbar {
+        height: 5%;
+    }
+
+    .navbar .nav-left img {
+        width: 70px;
+        height: 20px;
+    }
+
+    .navbar .nav-right ul {
+        justify-content: space-evenly;
+    }
+
+    .main {
+        margin-top: 15%;
+        width: 70%;
+    }
+
+    .main img {
+        width: 300px;
+    }
+
+    .main h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .main p {
+        font-size: 13px;
+        width: 90%;
+    }
+
+    .main button {
+        padding: 15px 60px;
+    }
+
+    .curve {
+        top: 85%;
+    }
+
+    .section-1 {
+        display: block;
+    }
+
+    .info {
+        margin: 3%;
+    }
+
+    .box h3 {
+        text-align: center;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productive-img {
+        width: 100%;
+        margin-bottom: 15%;
+    }
+
+    .productive-img img {
+        width: 95%;
+    }
+
+    .stay-productive {
+        width: 100%;
+    }
+
+    .stay-productive h2 {
+        font-size: 18px;
+    }
+
+    .stay-productive p {
+        font-size: 12px;
+    }
+
+    .section-3 {
+        margin-bottom: 200px;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 280px;
+        height: 150px;
+        margin-bottom: 10%;
+        padding: 20px;
+    }
+
+    .testimonial p {
+        padding-bottom: 10px;
+    }
+
+    .testimonial .people img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .call-to-act {
+        height: 300px;
+        padding: 10px 20px;
+    }
+
+    .call-to-act h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .call-to-act p {
+        font-size: 11px;
+        padding: 0 20px;
+    }
+
+    .get-started {
+        width: 100%;
+        height: 100%;
+        display: inline;
+    }
+
+    .get-started input {
+        width: 100%;
+        height: 35%;
+        margin-bottom: 9%;
+    }
+
+    .get-started button {
+        width: 100%;
+        height: 35%;
+    }
+
+    .foot {
+        display: block;
+        width: 100%;
+    }
+
+    .foot-location {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .contact {
+        width: 100%;
+
+    }
+
+    .foot-nav-1 {
+        width: 50%;
+    }
+
+    .foot-nav-1 ul li {
+        width:100%;
+        margin-bottom: 10%;
+    }
+
+    .foot-nav-2 {
+        width: 50%;
+    }
+
+    .foot-nav-2 ul li {
+        width:100%;
+        margin-bottom: 10%;
+    }
+
+    .foot-social {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-brands {
+        margin-right: 10%;
+    }
 }
